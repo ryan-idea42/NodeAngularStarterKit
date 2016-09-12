@@ -18,6 +18,7 @@
         "grunt-contrib-cssmin": "*", 
         "grunt-contrib-watch": "*", 
         "grunt-nodemon": "*",
-        "grunt-concurrent": "*"
+        "grunt-concurrent": "*", 
+        "grunt-open": "*"
     }
 }

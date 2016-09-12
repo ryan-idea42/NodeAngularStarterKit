@@ -52,11 +52,16 @@ module.exports = function (grunt) {
                 script: 'server.js'
             }
         },
+        open: {
+            dev: {
+                path: 'http://localhost:8080'
+            }
+        },
         concurrent: {
             options: {
                 logConcurrentOutput: true
             },
-            tasks: ['nodemon', 'watch']
+            tasks: ['nodemon', 'watch', 'open']
         }
 
     });
@@ -68,6 +73,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-nodemon');
+    grunt.loadNpmTasks('grunt-open');
     grunt.loadNpmTasks('grunt-concurrent');
 
     grunt.registerTask('default', ['sass', 'cssmin', 'jshint', 'concat', 'uglify', 'concurrent']);
