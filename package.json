@@ -1,17 +1,13 @@
 {
-    "name": "NodeAngularGrunt",
-    "description": "Me just working with GRUNT in Angular",
+    "name": "nodeangularstarterkit",
+    "description": "A starter project for anyone wanting to build an Angular SPA app within NodeJS",
     "author": "Ryan Ward",
     "version": "1.0.0",
     "main": "server.js",
     "dependencies": {
         "express": "*", 
         "angular": "*", 
-        "angular-route": "*",
-        "angular-material": "*", 
-        "angular-aria": "*", 
-        "angular-messages": "*", 
-        "angular-animate": "*"
+        "angular-route": "*"
     }, 
     "devDependencies": {
         "grunt": "*", 
