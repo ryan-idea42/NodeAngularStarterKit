@@ -6,6 +6,7 @@
     "main": "server.js",
     "dependencies": {
         "express": "*", 
+        "body-parser": "*",
         "angular": "*", 
         "angular-route": "*"
     }, 
